@@ -16,6 +16,7 @@ It also includes implementation of the vision of the signal cone (default one, n
 Using these, an partially completed example Autonomous mode for Powerplay is implemented. You could modify this easily to develop your own autonomous mode that will work on all 4 starting positions in Powerplay - Blue Left, Blue Right, Red Left and Red Right
 ## Release 1.1 update
 An autonomous mode to just detect the signal cone and park has been introduced.
+Added sample code to slow down robot if needed. Thanks to suggestion from Team 9225.
 Updated platform to 8.1.1 release of FTCRobotController.
 
 
