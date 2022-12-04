@@ -12,7 +12,7 @@ import org.firstinspires.ftc.teamcode.drive.DriveConstants;
 import org.firstinspires.ftc.teamcode.trajectorysequence.TrajectorySequence;
 
 /**
- * FTC WIRES Autonomous Example
+ * FTC WIRES Autonomous Example for dropping preloaded cone, picking and dropping 2 cones and park
  */
 @Autonomous(name = "FTC Wires Autonomous", group = "00-Autonomous", preselectTeleOp = "FTC Wires TeleOp")
 public class AutoOpMode extends LinearOpMode{
