@@ -123,7 +123,10 @@ public class AutoOpMode extends LinearOpMode{
         trajectoryAuto = driveTrain.trajectorySequenceBuilder(initPose)
                 .lineToLinearHeading(midWayPose)
                 //Uncomment following line to slow down turn if needed.
-                .setVelConstraint(getVelocityConstraint(30 /* Slower Velocity*/, 15 /*Slower Angular Velocity*/, DriveConstants.TRACK_WIDTH))
+                .setVelConstraint(getVelocityConstraint(
+                    0.5*DriveConstants.MAX_VEL/*Slower velocity*/,
+                    0.5*DriveConstants.MAX_ANG_VEL, /*Slower angular velocity*/ 
+                    DriveConstants.TRACK_WIDTH))
                 .lineToLinearHeading(dropConePose0)
                 .addDisplacementMarker(() -> {
                     dropCone(0); //Drop preloaded Cone
