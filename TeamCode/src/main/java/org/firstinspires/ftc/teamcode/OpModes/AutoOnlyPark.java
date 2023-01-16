@@ -81,36 +81,36 @@ public class AutoOnlyPark extends LinearOpMode{
                 initPose = new Pose2d(-54, 36, Math.toRadians(0)); //Starting pose
                 midWayPose = new Pose2d(-33, 36, Math.toRadians(0)); //Choose the pose to move forward towards signal cone
                 switch(vision.identifiedparkingLocation){
-                    case 1: parkPose = new Pose2d(-33, 60, Math.toRadians(0)); break; // Location 1
-                    case 2: parkPose = new Pose2d(-33, 36, Math.toRadians(0)); break; // Location 2
-                    case 3: parkPose = new Pose2d(-33, 11, Math.toRadians(0)); break; // Location 3
+                    case 1: parkPose = new Pose2d(-34, 60, Math.toRadians(0)); break; // Location 1
+                    case 2: parkPose = new Pose2d(-34, 36, Math.toRadians(0)); break; // Location 2
+                    case 3: parkPose = new Pose2d(-34, 11, Math.toRadians(0)); break; // Location 3
                 }
                 break;
             case BLUE_RIGHT:
                 initPose = new Pose2d(-54, -36, Math.toRadians(0));//Starting pose
                 midWayPose = new Pose2d(-33, -36, Math.toRadians(0)); //Choose the pose to move forward towards signal cone
                 switch(vision.identifiedparkingLocation){
-                    case 1: parkPose = new Pose2d(-33, -11, Math.toRadians(0)); break; // Location 1
-                    case 2: parkPose = new Pose2d(-33, -36, Math.toRadians(0)); break; // Location 2
-                    case 3: parkPose = new Pose2d(-33, -60, Math.toRadians(0)); break; // Location 3
+                    case 1: parkPose = new Pose2d(-34, -11, Math.toRadians(0)); break; // Location 1
+                    case 2: parkPose = new Pose2d(-34, -36, Math.toRadians(0)); break; // Location 2
+                    case 3: parkPose = new Pose2d(-34, -60, Math.toRadians(0)); break; // Location 3
                 }
                 break;
             case RED_LEFT:
                 initPose = new Pose2d(54, -36, Math.toRadians(180));//Starting pose
                 midWayPose = new Pose2d(33, -36, Math.toRadians(180)); //Choose the pose to move forward towards signal cone
                 switch(vision.identifiedparkingLocation){
-                    case 1: parkPose = new Pose2d(33, -60, Math.toRadians(180)); break; // Location 1
-                    case 2: parkPose = new Pose2d(33, -36, Math.toRadians(180)); break; // Location 2
-                    case 3: parkPose = new Pose2d(33, -11, Math.toRadians(180)); break; // Location 3
+                    case 1: parkPose = new Pose2d(34, -60, Math.toRadians(180)); break; // Location 1
+                    case 2: parkPose = new Pose2d(34, -36, Math.toRadians(180)); break; // Location 2
+                    case 3: parkPose = new Pose2d(34, -11, Math.toRadians(180)); break; // Location 3
                 }
                 break;
             case RED_RIGHT:
                 initPose = new Pose2d(54, 36, Math.toRadians(180)); //Starting pose
                 midWayPose = new Pose2d(33, 36, Math.toRadians(180)); //Choose the pose to move forward towards signal cone
                 switch(vision.identifiedparkingLocation){
-                    case 1: parkPose = new Pose2d(33, 11, Math.toRadians(180)); break; // Location 1
-                    case 2: parkPose = new Pose2d(33, 36, Math.toRadians(180)); break; // Location 2
-                    case 3: parkPose = new Pose2d(33, 60, Math.toRadians(180)); break; // Location 3
+                    case 1: parkPose = new Pose2d(34, 11, Math.toRadians(180)); break; // Location 1
+                    case 2: parkPose = new Pose2d(34, 36, Math.toRadians(180)); break; // Location 2
+                    case 3: parkPose = new Pose2d(34, 60, Math.toRadians(180)); break; // Location 3
                 }
                 break;
         }
