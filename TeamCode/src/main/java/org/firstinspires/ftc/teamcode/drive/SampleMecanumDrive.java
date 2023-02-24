@@ -121,10 +121,18 @@ public class SampleMecanumDrive extends MecanumDrive {
         // TODO : ftcwires action. Set the IMU axis based on which direction the Rev logo is pointing
         BNO055IMUUtil.remapZAxis(imu, AxisDirection.POS_Z);
 
+        /*
         leftFront = hardwareMap.get(DcMotorEx.class, "leftFront");
         leftRear = hardwareMap.get(DcMotorEx.class, "leftRear");
         rightRear = hardwareMap.get(DcMotorEx.class, "rightRear");
         rightFront = hardwareMap.get(DcMotorEx.class, "rightFront");
+
+
+         */
+        leftRear = hardwareMap.get(DcMotorEx.class, "left_back");
+        leftFront = hardwareMap.get(DcMotorEx.class, "left_front");
+        rightRear = hardwareMap.get(DcMotorEx.class, "right_back");
+        rightFront = hardwareMap.get(DcMotorEx.class, "right_front");
 
         motors = Arrays.asList(leftFront, leftRear, rightRear, rightFront);
 
